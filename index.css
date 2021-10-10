@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./Assets/BG/cosmos-5809271.png) center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    overflow-y: scroll;
+}
+
+h1 {
+    font-size: 120px;
+}
+
+h1, p {
+    color: #ffff;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.filter {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    filter: opacity(.6);
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* #home-top, #about-me, #tools, #experience, #skills, #projects, #contact #website-created-with {
+    scroll-snap-align: proximity;
+} */
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+.logo-container {
+    flex-basis: 30%;
+}
+
+.nav-content {
+    flex-basis: 70%;
+    text-align: end;
+}
+
+.logo-container a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.logo-container a:nth-of-type(1){
+    padding: 1rem 0 1rem 1rem;
+}
+
+.logo-container a:nth-of-type(2){
+    padding: 1rem 1rem 1rem 0;
+}
+
+.nav-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content ul li {
+    display: inline-block;
+}
+
+.nav-content ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.nav-content ul li a:hover {
+    color: #8E8BC1;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.home-main-container {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.home-container p, .about-me-text-container p {
+    font-size: 28px;
+    display: inline-block;
+}
+
+.text-and-location {
+    display: flex;
+    align-items: center;
+}
+
+.location-icon {
+    display: inline-block;
+    max-width: 50px;
+}
+
+.about-me-main-container {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.about-me-text-container {
+    flex-basis: 60%;
+    padding: 10rem 0;
+}
+
+.about-me-img-container {
+    flex-basis: 40%;
+}
+
+.about-me-text-container h1 {
+    padding-bottom: 1rem;
+}
+
+.about-me-text-container p {
+    font-size: 36px;
+}
+
+.about-me-img-container img {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.tools-grid {
+    background-color: rgba(0, 0, 0, 0.788);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.tools-icons {
+    display: inline-block;
+    max-width: 80px;
+}
+
+.tools-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tools-list li {
+    text-decoration: none;
+    color: #fff;
+    font-size: 21px; 
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: .8rem;
+}
+
+.tools-list li p{
+    padding-left: 1rem;
+}   
+
+.tools-list ul li.tools-comment {
+    height: 112px;
+}
+
+.tools-3 {
+    align-self: baseline;
+}
+
+.working-img {
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.experience-container {
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 10rem 0;
+}
+
+.experience-content {
+    padding-top: 5rem;
+}
+
+.codeacademy-container, .bowhead-container {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.experience-txt-individual {
+    padding-left: 1.5rem;
+}
+
+.experience-logo img {
+    max-width: 85px;
+}
+
+.experience-logo .bh-logo {
+    border-radius: 20px;
+}
+
+.experience-title {
+    font-size: 21px;
+    padding: .5rem 0;
+}
