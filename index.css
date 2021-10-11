@@ -5,9 +5,12 @@
 }
 
 body {
-    background: url(./Assets/BG/cosmos-5809271.png) center center fixed;
-    background-repeat: no-repeat;
+    background-image: url(./Assets/BG/cosmos-5809271.png);
+    background-position: center;
+    background-repeat: repeat-y;
     background-size: cover;
+    width: 100%;
+    height: 100vh;
     color: #fff;
     font-family: 'Roboto Mono', monospace;
     overflow-y: scroll;
@@ -26,6 +29,19 @@ section {
     overflow-x: hidden;
 }
 
+.home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
+    position: relative;
+}
+
+.home-main-container {
+    padding: 0 10rem;
+}
+
+.about-me-main-container, .main-tools-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container{
+    padding: 12rem 10rem;
+}
+
+
 .filter {
     position: fixed;
     top: 0;
@@ -35,7 +51,6 @@ section {
     width: 100%;
     height: 100%;
 }
-
 
 /* #home-top, #about-me, #tools, #experience, #skills, #projects, #contact #website-created-with {
     scroll-snap-align: proximity;
@@ -65,7 +80,7 @@ section {
 .logo-container a {
     color: inherit;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 21px;
     font-weight: 700;
 }
 
@@ -131,7 +146,6 @@ section {
 
 .about-me-main-container {
     width: 100%;
-    height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -213,7 +227,6 @@ section {
 
 .experience-container {
     width: 100%;
-    height: 100vh;
 }
 
 .experience-content {
@@ -246,19 +259,18 @@ section {
 
 a.cc-credential {
     text-decoration: none;
-    color: #fff;
+    color: #807dc2;
     font-size: 14px;
 }
 
 a.cc-credential:hover {
-    color: #8E8BC1;
+    color: #514ca1;
     font-weight: 900;
     text-decoration: underline;
 }
 
 .skills-main-container {
     width: 100%;
-    height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -303,7 +315,6 @@ a.cc-credential:hover {
 
 .projects-main-container {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -315,7 +326,7 @@ a.cc-credential:hover {
 
 
 .projects-text {
-    padding: 0 0 10rem 0;
+    padding: 0 0 8rem 0;
 }
 
 .projects-img {
@@ -350,7 +361,7 @@ a.cc-credential:hover {
 
 .contact-bottom-p{
     position: absolute;
-    bottom: 2rem;
+    bottom: 12%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -409,7 +420,6 @@ textarea:focus, input:focus{
 
 .wcw-main-container, .contact-main-container {
     width: 100%;
-    height: 100vh;
     position: relative;
 }
 
@@ -418,7 +428,6 @@ textarea:focus, input:focus{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem 0 5rem 0;
 }
 
 .coffee-container, .code-container, .music-container {
@@ -514,7 +523,7 @@ textarea:focus, input:focus{
 @media screen and (min-width: 1920px){
 
     .nav-content ul li a {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     h1 {
@@ -527,10 +536,6 @@ textarea:focus, input:focus{
 
     .message-input {
         height: 400px !important;
-    }
-
-    .home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
-    padding: 0 10rem !important;
     }
 
 }
@@ -552,11 +557,6 @@ textarea:focus, input:focus{
     .message-input {
         height: 300px !important;
     }
-
-    .home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
-    padding: 0 6rem;
-    }
-
 }
 
 @media screen and (max-width: 1400px){
@@ -572,12 +572,29 @@ textarea:focus, input:focus{
 }
 
 @media screen and (max-width: 1200px){
-    h1 {
-        font-size: 60px !important;
+
+    .logo-container a {
+        font-size: 18px;
     }
 
     .home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
-        padding: 0 4rem;
+        position: relative;
+    }
+    
+    .home-main-container {
+        padding: 0 5rem;
+    }
+
+    .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container{
+        padding: 8rem 5rem 12rem;
+    }
+    
+    .main-tools-container, .wcw-main-container, .contact-main-container{
+        padding: 8rem 5rem;
+    }
+
+    h1 {
+        font-size: 60px !important;
     }
 
     .tools-grid {
@@ -604,11 +621,10 @@ textarea:focus, input:focus{
 
     .projects-text {
         padding: 0 0 8rem 0;
-    }
-
+    } 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     h1 {
         font-size: 60px !important;
     }
@@ -663,7 +679,6 @@ textarea:focus, input:focus{
         max-width: 600px;
         margin: auto;
     }
-
 }
 
 @media screen and (min-width: 568px) {
@@ -674,6 +689,34 @@ textarea:focus, input:focus{
 
 
 @media screen and (max-width: 567px) {
+
+    .home-container p, .about-me-text-container p {
+        font-size: 18px;
+    }
+
+    .home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
+        position: relative;
+    }
+    
+    .home-main-container {
+        padding: 0 2rem;
+    }
+
+    .main-tools-container, .about-me-main-container, .experience-container, .projects-main-container{
+        padding: 8rem 2rem;
+    }
+    
+    .skills-main-container, .wcw-main-container, .contact-main-container {
+        padding: 8rem 2rem 6rem;
+    }
+
+    .skills-main-container {
+        padding-bottom: 1rem;
+    }
+
+    .wcw-main-container {
+        padding-bottom: 1rem !important;
+    }
 
     #nav-bar {
         padding: 0.5rem 1.5rem;
@@ -712,7 +755,7 @@ textarea:focus, input:focus{
     }
 
     .logo-container a {
-    font-size: 24px;
+    font-size: 16px;
     }
 
     .home-container h1 {
@@ -855,7 +898,7 @@ textarea:focus, input:focus{
     }
 
     .contact-container {
-        width: 100%;
+        width: 80%;
     }
 
     .contact-container h1 {
@@ -868,7 +911,7 @@ textarea:focus, input:focus{
 
     .contact-bottom-p {
         position: relative;
-        padding: 5rem 0 10rem;
+        padding: 2rem 0;
         bottom: 0;
         left: 0;
         transform: translateX(0);
@@ -876,13 +919,8 @@ textarea:focus, input:focus{
         width: 100%;
     }
 
-    .wcw-main-container {
-        height: 100%;
-    }
-
     .wcw-container {
         flex-wrap: wrap;
-        padding: 0 0 5rem;
     }
 
     .coffee-container, .code-container, .music-container {
@@ -900,15 +938,6 @@ textarea:focus, input:focus{
         font-size: 12px;
     }
 
-    .home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
-        padding: 0 2rem;
-    }
-
-    .wcw-main-container, .contact-main-container, .skills-main-container {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
 }
 
 @media screen and (max-width: 320px) { 
@@ -929,11 +958,6 @@ textarea:focus, input:focus{
         font-size: 16px;
     }
 
-    .wcw-main-container, .contact-main-container, .skills-main-container {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
 }
 
 
