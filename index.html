@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Owl Carousel -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
 
+    
 
     <title>Bren Bernal</title>
 </head>
@@ -20,7 +26,7 @@
     <div class="filter"></div>
 
     <section id="home">
-        
+
         <div id="nav-bar">
             <div class="logo-container">
                 <a href="#home">/</a>
@@ -32,10 +38,16 @@
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about-me">ABOUT ME</a></li>
                     <li><a href="#experience">EXPERIENCE</a> </li>
-                    <li><a href="contact">CONTACT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
             
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/brenberan/" target="_blank"><img class="social-media-link" src="./Assets/Contact/linkedin.png" alt=""></a>
+            <a href="https://github.com/brenbernal" target="_blank"><img class="social-media-link" src="./Assets/Contact/git_w.png" alt=""></a>
+            <a href="https://twitter.com/brenberan_/" target="_blank"><img class="social-media-link" src="./Assets/Contact/twitter.png" alt=""></a>
         </div>
 
         <section id="home-top">
@@ -46,8 +58,7 @@
                     <h1>HI I'M BREN!</h1>
                     
                     <div class="text-and-location">
-                        <p>I'm a Front End developer based in Mexico</p>
-                        <img class="location-icon" src="./assets/Icons/location_icon.png" alt="">
+                        <p>I'm a Front End developer based in Mexico <img class="location-icon" src="./assets/Icons/location_icon.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -69,9 +80,9 @@
         </section>
 
         <section id="tools">
-            <h1 class="center-text">TOOLS</h1>
+            <h1 class="center-text">My tools</h1>
             <div class="tools-container">
-                <div class="tools-grid">
+                <div class="tools-grid owl-carousel owl-theme">
                     <div class="tools-list tools-1">
                         <ul>
                             <li><img class="tools-icons" src="./assets/Icons/git_plain_logo_icon_146507.png" alt=""><p>GIT</p></li>
@@ -119,7 +130,7 @@
                             <div class="experience-txt-individual">
                                 <p class="experience-time">AUGUST 2020 - NOVEMBER 2020</p>
                                 <p class="experience-title">Web Development Career Path</p>
-                                <p class="experience-place">CODEACADEMY <a href="http://">SEE CREDENTIAL</a></p>
+                                <p class="experience-place">CODEACADEMY <a class="cc-credential" href="https://www.codecademy.com/profiles/BrenBeran/certificates/5b32457b646caa5007c30975?next=true" target="_blank"> - SEE CREDENTIAL</a></p>
                             </div>
                         </div>
 
@@ -139,69 +150,128 @@
         </section>
 
         <section id="skills">
-            <div class="skills-img-container">
-                <img src="./Assets/Illustrations/Super Woman_Monochromatic.png" alt="">
-            </div>
-            <div class="skills-text">
-                <h1>Skills</h1>
-                <ul>
-                    <li>Always willing to learn</li>
-                    <li>Positive attitude</li>
-                    <li>Team player</li>
-                    <li>Open to feedback</li>
-                    <li>//Remember to remove</li>
-                    <li>Watch movies and series</li>
-                </ul>
+            <div class="skills-main-container">
+                <div class="skills-img-container">
+                    <div class="sw-img-bg">
+                        <img src="./Assets/Illustrations/Super Woman_Monochromatic.png" alt="">
+                    </div>
+                </div>
+                <div class="skills-text">
+                    <h1>Skills</h1>
+                    <ul>
+                        <li>Always willing to learn</li>
+                        <li>Positive attitude</li>
+                        <li>Team player</li>
+                        <li>Open to feedback</li> <br>
+                        <p>//Remember to remove 👇</p>
+                        <li>Watch movies and series</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="projects">
-            <div class="projects-text">
-                <h1>Projects</h1>
-                <p>//Work in progress</p>
-            </div>
-            <div class="projects-img">
-                <img src="./Assets/Illustrations/Fast Working_Monochromatic.png" alt="">
+            <div class="projects-main-container">
+                <div class="projects-text">
+                    <h1>Projects</h1>
+                    <p>//Work in progress</p>
+                </div>
+                <div class="projects-img">
+                    <img src="./Assets/Illustrations/Fast Working_Monochromatic.png" alt="">
+                </div>
             </div>
         </section>
 
         <section id="contact">
-            <div class="contact-container">
-                <img src="./Assets/Illustrations/Sending emails_Outline.png" alt="">
-                <h1 class="center-text">Get in touch</h1>
+            <div class="contact-main-container">
+                <div class="contact-container">
+                    <div class="contact-title-container">
+                        <h1 class="center-text contact-title-desktop">Get in touch</h1>
+                        <h1 class="center-text contact-title-mobile">Contact</h1>
+                        <img class="email-img" src="./Assets/Illustrations/Sending emails_Outline_2.png" alt="">
+                    </div>
+                    <div class="contact-form">
+                        <form action="" class="contact-form-area">
+                            <input class="name-input" type="text" id="fname" name="firstname" placeholder="Name">
+                            <textarea class="message-input" id="message" name="message" placeholder="Write your message"></textarea>
+                            <button class="submit-btn" value="Submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <p class="contact-bottom-p">//Feedback is welcome!</p>
             </div>
-
-            <div class="contact-form">
-                <form action="">
-                    <input type="text" id="fname" name="firstname" placeholder="Name">
-                    <textarea id="message" name="message" placeholder="Write your message"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
-            <p>//Feedback is welcome!</p>
+            
         </section>
 
         <section id="website-created-with">
-            <h1 class="center-text">Website created with:</h1>
-            <div class="wcw-container">
-                <div class="coffee-container">
-                    <img src="./Assets/Illustrations/Coffee_Isometric.png" alt="">
-                    <p>Coffee</p>
+            <div class="wcw-main-container">
+                <h1 class="center-text wcw-title">Web created with:</h1>
+                <div class="wcw-container">
+                    <div class="coffee-container">
+                        <div class="white-card">
+                            <img class="wcw-img" src="./Assets/Illustrations/Coffee_Isometric.png" alt="">
+                        </div>
+                        <div class="wcw-container-p">
+                            <p class="wcw-p">Coffee</p>
+                        </div>
+                    </div>
+                    
+                    <div class="code-container">
+                        <div class="white-card">
+                            <img class="wcw-img" src="/Assets/Illustrations/Coding _Outline.png" alt="">
+                        </div>
+                        <div class="wcw-container-p">
+                            <p class="wcw-p">Code</p>
+                        </div>
+                    </div>
+                    <div class="music-container">
+                        <div class="white-card">
+                            <img class="wcw-img" src="/Assets/Illustrations/Music_Isometric.png" alt="">
+                        </div>
+                        <div class="wcw-container-p">
+                            <p class="wcw-p">Music</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="code-container">
-                    <img src="/Assets/Illustrations/Coding _Outline.png" alt="">
-                    <p>Code</p>
-                </div>
-                <div class="music-container">
-                    <img src="/Assets/Illustrations/Music_Isometric.png" alt="">
-                    <p>Music</p>
-                </div>
-
-                <p>// and love</p><img src="./Assets/Icons/heart_icon-icons.com_54429.png" alt="">
+                
             </div>
+            
         </section>
     </section>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-p">© Brenda Bernal 2021</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:5,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+            loop:true
+        },
+        700:{
+            items:2,
+            nav:false,
+            loop:true
+        },
+        1200:{
+            items:3,
+            nav:false,
+            loop:false
+        }
+    }
+})
+    </script>
 
 </body>
 </html>

@@ -11,6 +11,7 @@ body {
     color: #fff;
     font-family: 'Roboto Mono', monospace;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -22,7 +23,7 @@ h1, p {
 }
 
 section {
-    padding: 2rem 0;
+    overflow-x: hidden;
 }
 
 .filter {
@@ -30,9 +31,9 @@ section {
     top: 0;
     background-color: #000;
     filter: opacity(.6);
-    z-index: -1;
+    z-index: -5;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -49,6 +50,7 @@ section {
     align-items: center;
     margin: auto;
     padding: 2rem;
+    z-index: 5;
 }
 
 .logo-container {
@@ -63,7 +65,7 @@ section {
 .logo-container a {
     color: inherit;
     text-decoration: none;
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
 }
 
@@ -88,7 +90,6 @@ section {
 .nav-content ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 32px;
     font-weight: 700;
     padding: 1rem;
     cursor: pointer;
@@ -105,7 +106,6 @@ section {
 .home-main-container {
     width: 100%;
     height: 100vh;
-    padding: 0 10rem;
     margin: auto;
     display: flex;
     align-items: center;
@@ -114,6 +114,7 @@ section {
 .home-container p, .about-me-text-container p {
     font-size: 28px;
     display: inline-block;
+    position: relative;
 }
 
 .text-and-location {
@@ -124,12 +125,13 @@ section {
 .location-icon {
     display: inline-block;
     max-width: 50px;
+    position: absolute;
+    bottom: 0;
 }
 
 .about-me-main-container {
     width: 100%;
     height: 100vh;
-    padding: 0 10rem;
     margin: auto;
     display: flex;
     align-items: center;
@@ -137,7 +139,6 @@ section {
 
 .about-me-text-container {
     flex-basis: 60%;
-    padding: 10rem 0;
 }
 
 .about-me-img-container {
@@ -164,15 +165,15 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 80%;
     margin: auto;
     border-radius: 20px;
     padding: 2rem;
+    max-width: 1200px;
 }
 
 .tools-icons {
     display: inline-block;
-    max-width: 80px;
+    max-width: 60px;
 }
 
 .tools-list ul {
@@ -196,7 +197,7 @@ section {
 }   
 
 .tools-list ul li.tools-comment {
-    height: 112px;
+    height: 85.5px;
 }
 
 .tools-3 {
@@ -213,7 +214,6 @@ section {
 .experience-container {
     width: 100%;
     height: 100vh;
-    padding: 5rem 10rem 0;
 }
 
 .experience-content {
@@ -230,6 +230,7 @@ section {
     padding-left: 1.5rem;
 }
 
+
 .experience-logo img {
     max-width: 85px;
 }
@@ -242,3 +243,697 @@ section {
     font-size: 21px;
     padding: .5rem 0;
 }
+
+a.cc-credential {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+a.cc-credential:hover {
+    color: #8E8BC1;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.skills-main-container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.sw-img-bg {
+    background-color: #8e8bc1;
+    border-radius: 30px;
+    max-width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills-img-container img { 
+    display: inline-block;
+    position: relative;
+    width: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 3rem;
+}
+
+.skills-img-container {
+    padding-right: 2rem;
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.skills-text {
+    padding-left: 2rem;
+    flex-basis: 50%;
+}
+
+
+.skills-text ul li {
+    font-size: 36px;
+}
+
+.projects-main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-text h1 {
+    padding-bottom: 1rem;
+}
+
+
+.projects-text {
+    padding: 0 0 10rem 0;
+}
+
+.projects-img {
+    background: #8e8bc1;
+    border-radius: 20px;
+}
+
+.projects-img img {
+    display: block;
+    margin: auto;
+    max-width: 400px;
+}
+
+.contact-container {
+    position: relative;
+}
+
+.email-img {
+    position: relative;
+    display: block;
+    margin: auto;
+    max-width: 200px;
+}
+
+.contact-form {
+    position: relative;
+}
+
+.contact-container h1 {
+    padding: 2rem 2rem 1rem 0;
+}
+
+.contact-bottom-p{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-form-area {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+}
+
+.name-input, .message-input,  .submit-btn {
+    background: #8E8BC1;
+    color: #fff;
+    border: none;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.name-input, .submit-btn {
+    border-radius: 10px;
+    height: 50px;
+}
+
+.name-input {
+    max-width: 250px;
+}
+
+.submit-btn {
+    max-width: 160px;
+    width: 100%;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.message-input {
+    align-self: center;
+    resize: none;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 100%;
+    height: 400px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: .5;
+}
+
+.wcw-main-container, .contact-main-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.wcw-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0 5rem 0;
+}
+
+.coffee-container, .code-container, .music-container {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.white-card {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 220px;
+    height: 220px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.coffee-container .wcw-img {
+    max-width: 220px;
+    width: 100%;
+}
+
+.wcw-img {
+    max-width: 300px;
+    width: 100%;
+    z-index: 1;
+}
+
+.wcw-p {
+    text-align: center;
+    font-weight: 900;
+    font-size: 21px;
+}
+
+.footer-container {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.wcw-bottom-heart {
+    display: block;
+    max-width: 30px;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.contact-main-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#tools h1 {
+    padding: 2rem 0;
+}
+
+.experience-container {
+    display: flex;
+    align-items: center;
+}
+
+.social-media {
+    display: grid;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    z-index: 4;
+}
+
+.social-media-link {
+    width: 40px;
+    margin-bottom: .5rem;
+}
+
+.wcw-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1920px){
+
+    .nav-content ul li a {
+        font-size: 26px !important;
+    }
+
+    h1 {
+        font-size: 120px !important;
+    }
+    
+    .home-container h1 {
+        font-size: 120px;
+    }
+
+    .message-input {
+        height: 400px !important;
+    }
+
+    .home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
+    padding: 0 10rem !important;
+    }
+
+}
+
+@media screen and (min-width: 1201px){
+    
+    .nav-content ul li a {
+        font-size: 21px;
+    }
+
+    h1 {
+        font-size: 80px !important;
+    }
+    
+    .home-container h1 {
+        font-size: 120px;
+    }
+
+    .message-input {
+        height: 300px !important;
+    }
+
+    .home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
+    padding: 0 6rem;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+    
+    .tools-grid {
+        margin: auto;
+    }
+
+    .tools-container {
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    h1 {
+        font-size: 60px !important;
+    }
+
+    .home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
+        padding: 0 4rem;
+    }
+
+    .tools-grid {
+        margin: auto;
+    }
+
+    .sw-img-bg {
+        max-width: 350px;
+        height: 350px;
+    }
+
+    .skills-text {
+        flex-basis: 80%;
+    }
+
+    .skills-img-container {
+        flex-basis: 20%;
+    }
+
+    .skills-text ul li {
+        font-size: 34px;
+        line-height: 1.8;
+    }
+
+    .projects-text {
+        padding: 0 0 8rem 0;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    h1 {
+        font-size: 60px !important;
+    }
+
+    .home-container p, .about-me-text-container p {
+        font-size: 21px;
+    }
+
+    .tools-icons {
+        display: inline-block;
+        max-width: 50px;
+    }
+
+    .tools-list li {
+        font-size: 1rem;
+    }
+
+    .working-img {
+        max-width: 145px;
+    }
+
+    .sw-img-bg {
+        max-width: 250px;
+        height: 600px;
+    }
+
+    .skills-text h1 {
+        padding-bottom: 2rem;
+    }
+
+    .skills-text ul li {
+        font-size: 21px;
+    }
+
+    .contact-form-area {
+        max-width: 550px; 
+    }
+
+    .email-img {
+        position: relative;
+        display: block;
+        margin: auto;
+        max-width: 80px;
+    }
+
+    .white-card {
+        max-width: 160px;
+        height: 160px;
+    }
+
+    .tools-container {
+        max-width: 600px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 568px) {
+    .contact-title-mobile {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 567px) {
+
+    #nav-bar {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .logo-container {
+        display: flex;
+    }
+
+    .logo-container a:nth-of-type(1) {
+        padding: 1rem 0;
+    }
+
+    .nav-content {
+        display: none;
+    }
+
+    .location-icon {
+        position: absolute;
+        max-width: 1.5rem;
+        bottom: 0;
+    }
+
+    .social-media {
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .social-media-link {
+        width: 32px;
+        margin-bottom: 0.5rem;
+    }
+
+    h1 {
+        font-size: 48px !important;
+    }
+
+    .logo-container a {
+    font-size: 24px;
+    }
+
+    .home-container h1 {
+        margin: 1rem 0;
+    }
+
+    .about-me-main-container {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .about-me-text-container p {
+        padding-right: 2rem;
+    }
+
+    .about-me-img-container img {
+        max-width: 270px;
+        width: auto;
+    }
+
+    .about-me-img-container {
+        flex-basis: auto;
+    }
+
+    .about-me-text-container {
+        flex-basis: auto;
+    }
+
+    .tools-grid {
+        max-width: 260px;
+    }
+
+    #tools h1 {
+        padding: 2rem 0;
+    }
+
+    .tools-icons {
+        max-width: 45px;
+    }
+
+    .tools-comment p {
+        padding-left: 0 !important;
+        font-size: 14px;
+    }
+
+    .tools-list li {
+        padding: 0.5rem;
+    }
+
+    .experience-content {
+        padding-top: 2rem;
+    }
+
+    .experience-logo img {
+        max-width: 60px;
+    }
+
+    .experience-logo .bh-logo {
+        border-radius: 12px;
+    }
+
+    p.experience-time, p.experience-place {
+        font-size: 12px;
+    }
+
+    a.cc-credential {
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .skills-main-container {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .skills-text h1 {
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .skills-text {
+        padding: 2rem 1rem;
+        flex-basis: 100%;
+    }
+
+    .skills-text ul li {
+        font-size: 18px;
+    }
+
+    .skills-text p {
+        font-size: 14px;
+    }
+
+    .skills-img-container {
+        padding: 0;
+    }
+
+    .sw-img-bg {
+        background-color: #8e8bc1;
+        max-width: 250px;
+        height: 250px;
+    }
+
+    .projects-text {
+        padding: 4rem 0;
+    }
+
+    .projects-img {
+        background: rgb(255 255 255);
+        border-radius: 15px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .projects-img img {
+        max-width: 200px;
+        padding: 1rem;
+    }
+
+    .contact-title-desktop {
+        display: none;
+    }
+
+    .email-img {
+        display: none;
+    }
+
+    .contact-form-area {
+        max-width: 100%;
+    }
+
+    .submit-btn {
+        max-width: 100px;
+    }
+
+    .message-input {
+        height: 200px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .contact-container h1 {
+        padding: 1rem 0;
+    }
+
+    .contact-title-container, .about-me-main-container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .contact-bottom-p {
+        position: relative;
+        padding: 5rem 0 10rem;
+        bottom: 0;
+        left: 0;
+        transform: translateX(0);
+        text-align: center;
+        width: 100%;
+    }
+
+    .wcw-main-container {
+        height: 100%;
+    }
+
+    .wcw-container {
+        flex-wrap: wrap;
+        padding: 0 0 5rem;
+    }
+
+    .coffee-container, .code-container, .music-container {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wcw-title {
+        font-size: 32px !important;
+    }
+
+    .footer-p {
+        font-size: 12px;
+    }
+
+    .home-main-container, .about-me-main-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container {
+        padding: 0 2rem;
+    }
+
+    .wcw-main-container, .contact-main-container, .skills-main-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+
+    h1 {
+        font-size: 32px !important;
+    }
+    
+    p {
+        font-size: 14px !important;
+    }
+
+    p.experience-time, p.experience-place {
+        font-size: 10px !important;
+    }
+
+    .skills-text ul li {
+        font-size: 16px;
+    }
+
+    .wcw-main-container, .contact-main-container, .skills-main-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+
