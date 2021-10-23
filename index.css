@@ -40,7 +40,7 @@ section {
 .about-me-main-container, .main-tools-container, .experience-container, .skills-main-container, .projects-main-container, .wcw-main-container, .contact-main-container{
     padding: 12rem 10rem;
 }
-
+ 
 
 .filter {
     position: fixed;
